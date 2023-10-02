@@ -8,7 +8,7 @@ local Section = Tab:NewSection("Scripts")
 
 Section:NewButton("Finish", "ButtonInfo", function()
     print("Clicked")
-for i = game.Players.LocalPlayer.leaderstats.Stage.Value, 127 do
+for i = game.Players.LocalPlayer.leaderstats.Stage.Value, 133 do
     local part = game.Workspace["Checkpoints"][tostring(i)]
     if part and part:IsA("BasePart") then
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = part.CFrame
