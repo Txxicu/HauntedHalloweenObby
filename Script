@@ -1,0 +1,27 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+
+local Window = Library.CreateLib("[FREE UGC LIMITED] Haunted Halloween Obby | Txxicu Scripts", "RJTheme3")
+
+local Tab = Window:NewTab("Scripts")
+
+local Section = Tab:NewSection("Scripts")
+
+Section:NewButton("Finish", "ButtonInfo", function()
+    print("Clicked")
+for i = game.Players.LocalPlayer.leaderstats.Stage.Value, 127 do
+    local part = game.Workspace["Checkpoints"][tostring(i)]
+    if part and part:IsA("BasePart") then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = part.CFrame
+        task.wait()
+    end
+end
+
+
+for i = game.Players.LocalPlayer.leaderstats.Stage.Value, 127 do
+    local part = game.Workspace["Checkpoints"][tostring(i)]
+    if part and part:IsA("BasePart") then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = part.CFrame
+        task.wait()
+    end
+end
+end)
