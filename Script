@@ -25,3 +25,8 @@ for i = game.Players.LocalPlayer.leaderstats.Stage.Value, 127 do
     end
 end
 end)
+
+Section:NewButton("Txxicu Scripts", "ButtonInfo", function()
+    print("Clicked")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Txxicu/Txxicu-Scripts/main/Script'))()
+end)
